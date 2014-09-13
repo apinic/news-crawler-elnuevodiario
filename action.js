@@ -36,7 +36,7 @@ module.exports.request = function() {
         else {
           var apiUrl = config.api + 'entries/' + config['library_id'] + '/create';
           var image = '';
-          if (row.image > 0) {
+          if (row.image) {
             image = row.image[0].url;
           }
           var form = {
